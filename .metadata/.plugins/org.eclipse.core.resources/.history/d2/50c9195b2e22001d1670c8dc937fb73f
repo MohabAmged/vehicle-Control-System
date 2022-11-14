@@ -1,0 +1,253 @@
+/*
+ * Main.c
+ *
+ *  Created on: 20 Aug 2022
+ *      Author: marwa
+ */
+#include<stdio.h>
+#include "string.h"
+
+
+typedef struct
+{
+	int state ;
+	int temp;
+}State_Temp;
+char main_menu(void)
+{
+	char in;
+
+	printf("a. Turn on the vehicle engine \n");
+
+	printf("b. Turn off the vehicle engine \n");
+
+	printf("c. Quit the system \n");
+
+	scanf(" %c",&in);
+
+	return in;
+}
+
+
+void Print_State(char identifier)
+{
+
+	switch (identifier)
+	{
+	case 'a':
+		printf("The Vehicle engine is on \n");
+		break;
+	case 'b':
+		printf("The Vehicle engine is off \n");
+	    break;
+
+	case 'c':
+		printf("Good Bye \n");
+				break;
+		default:
+				break;
+	}
+}
+
+
+ char Sensors_set_menu(void )
+{
+
+
+			printf("a. Turn off the engine \n");
+
+			printf("b. Set the traffic light color. \n");
+
+			printf("c. Set the room temperature (Temperature Sensor) \n");
+
+			printf("d. Set the engine temperature (Engine Temperature Sensor) \n");
+
+			char in;
+			scanf(" %c",&in);
+
+
+	return in;
+
+
+
+
+
+}
+
+ void Print_Sensors_State(char identifier)
+ {
+
+ 	switch (identifier)
+ 	{
+ 	case 'a':
+ 		printf("Turn off the engine \n");
+ 		break;
+ 	case 'b':
+ 		printf("Set the traffic light color.\n");
+ 	    break;
+
+ 	case 'c':
+ 		printf("Set the room temperature (Temperature Sensor) \n");
+ 				break;
+ 	case 'd':
+ 	 		printf("Set the engine temperature (Engine Temperature Sensor) \n");
+ 	 				break;
+
+ 		default:
+ 				break;
+ 	}
+ }
+
+int Traffic_Light(void)
+{
+	char in;
+	int speed;
+	scanf(" %c",&in);
+
+	if(in =='G' ||in =='g')
+	{
+
+      speed=100;
+	}
+	else if(in =='O' ||in =='o')
+		 speed=30;
+
+	else if(in =='R' ||in =='r')
+			 speed=0;
+	else{
+		printf("Enter A Valid Option\n");
+		Traffic_Light();
+	}
+
+
+	 	 		printf("The Speed is Set to %d Km/h \n",speed);
+       return speed;
+
+
+}
+
+ State_Temp Temp_Data(void)
+{State_Temp Current_Temp;
+scanf(" %d",&Current_Temp.temp);
+if(Current_Temp.temp<10 )
+{
+	Current_Temp.state=1;
+  Current_Temp.temp=20;
+}
+else if(Current_Temp.temp>30)
+	{Current_Temp.temp=20;
+	Current_Temp.state=1;
+
+
+	}
+else
+{
+	Current_Temp.state=0;
+}
+
+printf("The Temp is Set to %d  \n",Current_Temp.temp);
+return Current_Temp;
+
+}
+
+State_Temp Engine_Temp_Data(void)
+{State_Temp Engine_Temp;
+scanf(" %d",&Engine_Temp.temp);
+if(Engine_Temp.temp >100 )
+{
+	Engine_Temp.state=1;
+	Engine_Temp.temp=125;
+}
+else if(Engine_Temp.temp >30)
+	{
+	Engine_Temp.state=0;
+
+	}
+printf("The Engine Temp is Set to %d  \n",Engine_Temp.temp);
+return Engine_Temp;
+
+}
+
+
+
+
+int main(void)
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+char choice , choice_on;
+int speed;
+State_Temp Engine,AC;
+while(1)
+{
+
+	choice=main_menu();
+	Print_State(choice);
+	while(choice=='b')
+	{
+		choice=main_menu();
+		Print_State(choice);
+	}
+
+	while(choice=='a')
+	{
+		choice_on=Sensors_set_menu();
+		Print_Sensors_State(choice_on);
+
+		if(choice_on=='a')
+			break;
+		else if(choice_on=='b')
+			speed=Traffic_Light();
+		else if(choice_on=='c')
+			AC=Temp_Data();
+
+		else if(choice_on=='d')
+			Engine=Engine_Temp_Data();
+		else
+		{
+			printf("Enter A Valid Option");
+		}
+		if(speed==30)
+		{
+			AC.state=1;
+			AC.temp=AC.temp*(5/4)+1;
+
+			Engine.state=1;
+			Engine.temp=AC.temp*(5/4)+1;
+
+
+		}
+
+	}
+
+
+
+   if(choice=='c')
+	break;
+
+   else
+   {
+	   printf("Enter A Valid Choice \n");
+   }
+
+   printf("Your Speed is %d \n",speed);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	return 0;
+}
+

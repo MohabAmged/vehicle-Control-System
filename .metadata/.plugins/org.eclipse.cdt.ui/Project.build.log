@@ -1,0 +1,6 @@
+18:53:40 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -o Project.exe Main.o 
+
+18:53:41 Build Finished. 0 errors, 0 warnings. (took 879ms)
+

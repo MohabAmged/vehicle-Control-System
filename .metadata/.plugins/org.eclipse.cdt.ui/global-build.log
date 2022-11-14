@@ -1,0 +1,74 @@
+Info: Nothing to build for Project
+Info: Nothing to build for Project
+01:59:02 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+c:/users/marwa/gcc/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:59:12 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -o Project.exe Main.o 
+02:02:06 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+02:04:29 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+02:06:47 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+c:/users/marwa/gcc/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:06:53 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -o Project.exe Main.o 
+02:10:35 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+c:/users/marwa/gcc/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:10:42 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -o Project.exe Main.o 
+Info: Nothing to build for Project
+Info: Nothing to build for Project
+Info: Nothing to build for Project
+02:13:54 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+02:16:48 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+c:/users/marwa/gcc/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:16:55 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -o Project.exe Main.o 
+02:17:43 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+02:24:17 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+Info: Nothing to build for Project
+Info: Nothing to build for Project
+Info: Nothing to build for Project
+Info: Nothing to build for Project
+18:53:30 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -o Project.exe Main.o 
+c:/users/marwa/gcc/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:53:40 **** Incremental Build of configuration Debug for project Project ****
+Info: Internal Builder is used for build
+gcc -o Project.exe Main.o 
